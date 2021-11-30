@@ -42,6 +42,10 @@ Aus Bildern in einem Quellordner werden verschiedene Formate im Zielordner erzeu
 
 Dateien aus dem Ordner `assets` werden ohne Änderung in den Zielordner kopiert.    
 
+## unter windows
+
+python3 -mpip install -r requirements.txt
+
 ## Aufruf
 
 Vorbereiten:
