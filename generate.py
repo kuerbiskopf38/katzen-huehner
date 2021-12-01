@@ -113,7 +113,7 @@ def generate_pages():
                 if 'filter' in page['meta']:
                     mod = __import__(page['meta']['filter'], fromlist=[None])
                     filter = getattr(mod, 'filter')
-                    page['meta'] = filter(page['meta'])
+                    page['meta'] = filter(page['meta'], config=config)
 
                 rendered_markdown = markdown.markdown(article.content)
                 content = chevron.render(
